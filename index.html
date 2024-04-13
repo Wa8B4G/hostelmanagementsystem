@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hostel management portal">
+    <meta name="keywords" content="HTML, CSS JAVASCRIPT">
+    <title>hostel management portal</title>
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+    
+</head>
+
+<body>
+    <!-- header and navigation page -->
+    <section class="container-lg" id="nav">
+        <nav class="navbar navbar-expand-lg rounded  ">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+
+                <!-- <div class="d-flex align-items-center justify-content-suround"> -->
+
+
+                <a class="navbar-brand text-danger bolder " href="#">
+                    <img src="/img/dspg.png" alt="logo" class="img-fluid img-thumbnail" id="img">
+                    DSPG <span class="text-warning">H-M-P</span></a>
+                <!-- </div> -->
+                <button class="navbar-toggler border-white bg-body-tertiary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse ms-4 ps-4 " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center ">
+                        <li class="nav-item nav-hover">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover">
+                            <a class="nav-link text-white" href="#">About-us</a>
+                        </li>
+                        <li class="nav-item dropdown nav-hover">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                STUDENT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/admissions/" target="_blank">Admission</a></li>
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/campus-life/" target="_blank">Campus life</a></li>
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/" target="_blank">Academic calenda</a></li>
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/" target="_blank">Prospective Student</a></li>
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/" target="_blank">Current Student</a></li>
+                                <li><a class="dropdown-item" href="https://mydspg.edu.ng/" target="_blank">Student Affairs</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-secondary" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary bold
+                         " type="submit">Search</button>
+                    </form> -->
+                    <a href="#form" class="btn btn-primary ms-2">Sign-up</a>
+                    <button class="btn btn-outline-warning ms-2 mybtn1">Register</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- dashboard and login form -->
+    <section class="container-lg" id="dashboard">
+        <div class="row p-4 mx-4">
+            <div class="col-7 text-center">
+                <h1 class="textheading ">Welcome To DSPG Hotel Management Portal</h1>
+
+                <div class="text-white mx-4 small text-center">
+                    <small class="text-center">We advise you to have a valid email account before you start the
+                        application process.</small>
+                    <small>
+                        Click on the room category you would like to book, e.g. Basic, Classic, Suite
+                    </small>
+                    <small>
+                        Follow the instructions given on the next page
+                    </small>
+                    <a href="#potfolior" class="btn btn-sm btn-warning p-2 m-2 bold text-white">Read more..</a>
+                </div>
+            </div>
+            <!-- this is my login form for html -->
+            <div class="col-4">
+                <div class="bg-white rounded" id="form">
+                    <h4 class="text-center  py-3 fh rounded">login if you already have account</h4>
+                    <div class=" p-4 ">
+
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name" class="imp">User ID</label>
+                                <!-- <span class="form-group-text"><i class="bi bi-person-fill-lock"></i></span> -->
+                                <input type="text" class="form-control" name="name" autocomplete="off" autofocus>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="imp mt-2 form-label ">Password</label>
+                                <!-- <span class="form-group-text"><i class="bi bi-key"></i></span> -->
+                                <input type="password" class="form-control" name="password" autocomplete="off"
+                                    autofocus>
+
+                            </div>
+                            <div class="form-group">
+
+                                <input type="checkbox" name="checkbox"><label class="ms-3" for="checkbox">save my
+                                    password</label>
+                            </div>
+                            <div class="form-group my-2 text-center ">
+
+                                <a href="#" class=" ">Forget my password</a>
+                            </div>
+                            <div class="form-group mb-4">
+                                <button class="form-control btn btn-primary" type="submit">Login</button>
+                            </div>
+                            <hr>
+                            <div class=" form-group text-center">
+                                <a class="form-control btn btn-warning mybtn">Register</a>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--is also for you part  -->
+    <section class="container-lg bg-white pb-4" id="potfolior">
+
+        <div class=" container-lg pt-4 text-center postion-relative">
+            <hr>
+            <div class="top-header ">
+                <h3 class="top-text text-white">Also for you</h3>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around align-center">
+            <div class="">
+                <a href="https://student.mydspgportal.ng" target="_blank" class="btn btn-outline-danger">Student Portal</a>
+            </div>
+            <div class="">
+                <a href="https://mydspg.edu.ng/" target="_blank" class="btn btn-outline-primary">School website</a>
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-outline-warning">Student Portal</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- this is my registration form -->
+    <section class="container-lg register" id="register">
+        <div class=" register-form  ">
+
+            <div class=" rg  card">
+                <!-- pb-4 px-4 -->
+                <div class="card-header  car form-text d-flex justify-content-around align-items-center  px-4">
+
+                    <h2 class="text-center text-white  ">Welcom to hostel management system</h2>
+                    <h1 class="times text-danger  text-end"><a href="#" class="btn btn-outline-warning">&times;</a></h1>
+
+                </div>
+                <hr>
+                <form action="#" class="row card-body">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="surname" class="form-label">surName</label>
+                            <input type="text" name="surname" class="form-control" autocomplete="off"
+                                placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label fl">email</label>
+                            <input type="email" name="email" class="form-control" placeholder="john@example.com"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="date-of-birth" class="form-label fl mt-1">D O B</label>
+                            <input type="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password" class="form-label fl mt-2">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="other-Name" class="form-label fl">Other-Name</label>
+                            <input type="text" name="other-Name" class="form-control" placeholder="othername" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label ">phone</label>
+                            <input type="text" name="other-Name" class="form-control" placeholder="0907642842" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="State" class="form-label ">State</label>
+                            <input type="text" name="state" class="form-control" placeholder="state" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password" class="form-label fl  m-2">Confirm-password</label>
+                            <input type="password" name="confirm" class="form-control" placeholder="password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning form-control mt-4">Register</button>
+                    </div>
+                    <hr>
+                    <div class="form-group text-white text-center">
+                        <p>pleas if you already have account click to 
+                            <a href="#form" class="times1">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-lg " id="footer">
+        <footer class="container-lg bg-dark rounded">
+            <h5 class="text-warning text-center py-4 ">
+                &copy; Delta state polytechnic ogwashi-uku
+
+            </h5>
+        </footer>
+    </section>
+
+    <!-- this is my javascript modules -->
+
+    <script type="module" src="/javascript/main.js"></script>
+
+</body>
+<!-- <script src="/javascript/main.js"></script> -->
+
+</html>

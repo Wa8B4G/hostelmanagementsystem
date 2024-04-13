@@ -1,0 +1,22 @@
+#student_dashboard {
+    /* margin-top: -10px; */
+    position: relative;
+    width   : 82.5%;
+    height  : 85vh;
+}
+
+/* this is my side navigation  */
+
+.side_navigation {
+margin-top: -10px;
+    position: fixed;
+    height: 90vh;
+    z-index: -1;
+}
+
+/* user profile */
+.profile{
+    
+    width: 300px;
+    height: auto;
+}
