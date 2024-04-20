@@ -29,6 +29,27 @@ mybtn1.addEventListener("click", Mybtn1);
 
 // this is my booking styling
 
+// this is my form authentication
+const userName = document.querySelector(".userName");
+const userPass = document.querySelector(".userPass");
+const userSign = document.querySelector(".userSign");
+
+const userAuthentication = function(e){
+    e.preventDefault();
+    let userNameAuth = userName.value;
+    let userPassAuth = userPass.value;
+
+    if (!userNameAuth == "" && !userPassAuth == "") {
+        console.log(userNameAuth);
+        console.log(userPassAuth);
+    }
+    else{
+        console.log("please provide a username and password");
+    }
+}
+
+userSign.addEventListener("submit", userAuthentication);
+
 
 
 

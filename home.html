@@ -19,9 +19,9 @@
 
 </head>
 
-<body>
+<body class="">
     <!-- header and navigation page -->
-    <section class="container-lg" id="nav">
+    <section class="container-fluid" id="nav">
         <nav class="navbar navbar-expand-lg rounded  ">
             <div class="container-fluid d-flex align-items-center justify-content-between">
 
@@ -87,45 +87,155 @@
         </nav>
     </section>
 
-    <section class="container-lg">
-        <h2>Welcome</h2>
+    <section class="container-fluid bg-tertary-secondary">
+
+        <!-- this is my navigation bar -->
+        <div id="myusernav">
+            <div id="horiz-nav" class="horiz-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="cbtn">
+                <span class="text-danger">
+                    &times;
+                </span>
+            </div>
+        </div>
     </section>
 
 
-    <section class="container-lg">
+    <!-- this is my user navigation button -->
+    <section class="container-fluid">
         <div class="row ms-1" id="student_dashboard">
-            <div class="col-1 side_navigation d-flex">
-                <div class=" bg-danger border-dark rounded display-3 mt-4 ms-4 profile  ">
+            <div class="col-1 side_navigation  ">
+                <div class="d-flex">
+                    <!-- <div class=" col-2  border-dark rounded display-3 mt-4 ms-4 profile  "> -->
                     <!-- <img src="/img/profile.jpg" class="profile" alt="" width="100px" height="100px"> -->
-                    <i class="bi bi-person-circle heading text-white"></i>
-                </div>
+                    <!-- <i class="bi bi-person-circle heading text-white"></i>
+                    </div> -->
 
 
-                <div class=" text-end bg-success">
-                    <div class="side_navigation">
-                        <ul class="nav flex-column ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+                    <div class=" col-2 text-end bg-success" id="user-nav">
+                        <div class="side_navigation  " id="side_nav">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                    <a class="nav-link active btn-active " aria-current="page" href="#">Active</a>
+                                    <ul class="nav ms-4 ps-4">
+                                        <li class="nav-item">
+                                            <a class="nav-link btn-active-1 text-body-secondary" href="#">biodata</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-1">
+<div class=" nav-col">
+
+</div>
+            </div>
+            <!-- this is my user content -->
+            <div class="col-10  container-fluid" id="user-dashboard-page  ">
+
+                <div class="container-fluid  welcome ">
+                    <h4 class=" ms-4 ">Welcome <span>UserName</span></h4>
+                </div>
+                <div class="userD h-20">
+                    <div data-page="page-1" class="container-lg  home_active">
+                        
+                        <div class="d-lg-flex px-4 pt-2">
+                            <div class="card  mx-2 w-50">
+                                <h5 class="card-header bg-primary text-white text-center text-transform-uppercase">some Text here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <img src="/img/bg-1.jpeg" class="card-img-bottom" alt="">
+
+                            </div>
+                            <div class="card mx-2">
+                                <img src="/img/h-1.jpg" class="card-img-top" alt="">
+
+                                <h5 class="card-header  bg-primary text-white text-center">Some TExt Here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                            </div>
+                            <div class="card mx-2">
+                                <img src="/img/h-2.jpg" class="card-img-top" alt="">
+
+                                <h5 class="card-header bg-primary text-white text-center">some Text here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                            </div>
+                         
+
+                            
+                        </div>
+                        <div class="d-lg-flex px-3 pt-3">
+                            <div class="card  mx-2 w-50">
+                                <img src="/img/h-5.jpg" class="card-img-bottom" alt="">
+
+                                <h5 class="card-header bg-success text-white text-center text-transform-uppercase">some Text here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+
+                            </div>
+                            <div class="card mx-2">
+
+                                <h5 class="card-header  bg-success text-white text-center">Some TExt Here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <img src="/img/h-2.jpg" class="card-img-top" alt="">
+
+                            </div>
+                            <div class="card mx-2">
+
+                                <h5 class="card-header bg-success text-white text-center">some Text here</h5>
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <img src="/img/h-1.jpg" class="card-img-top" alt="">
+
+                            </div>
+                          
+
+                            
+                        </div>
+                        
+                      
+
+
+
+                    </div>
+                    <div class="container-lg  home_active-1">
+                        <h1>this is me</h1>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </section>
 
 
     <!-- this is my booking form form -->
-    <section class="container-lg booking   " id="booknow">
+    <section class="container-fluid booking   " id="booknow">
         <div class=" booking-form  ">
 
             <div class=" bg  card">
@@ -189,19 +299,19 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary form-control mt-4">Book Now</button>
-                    </div>
-                    <hr>
+                        <div type="submit" class="btn btn-primary form-control mt-4">Book Now</button>
+                        </div>
+                        <hr>
 
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="container-lg " id="footer">
-        <footer class="container-lg bg-dark rounded">
+    <section class="container-fluid " id="footer_1">
+        <footer class="container-lg  rounded">
             <h5 class="text-warning text-center py-4 ">
-                &copy; Delta state polytechnic ogwashi-uku
+                <small class="ms-4">&copy;  Delta state polytechnic ogwashi-uku</small>
 
             </h5>
         </footer>
